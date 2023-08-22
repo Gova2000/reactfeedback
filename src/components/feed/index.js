@@ -11,7 +11,9 @@ const Box = props => {
   return (
     <>
       <li>
-        <img src={imageUrl} alt="name" className="img" onClick={func} />
+        <button type="button" onClick={func}>
+          <img src={imageUrl} alt={name} />
+        </button>
         <p>{name}</p>
       </li>
     </>
